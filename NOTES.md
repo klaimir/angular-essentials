@@ -16,7 +16,8 @@ One important note: All the course code will only work if you are NOT using "str
 
 # The Basics
 
-- ng g c server (To create a component)
+- Explanation of the different parts of a component.
+- ng g c server (To create a component).
 
 # Components and Databinding
 
