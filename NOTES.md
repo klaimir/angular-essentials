@@ -22,8 +22,15 @@ One important note: All the course code will only work if you are NOT using "str
 # Components and Databinding
 
 - Explain component structure.
-- Explain component communications in binding:
-  * String Interpolation: {{ 'Server' }} => It´s possible to use ternary operator or whatever expression.
+- Explain component communications in binding.
+
+## String Interpolation
+
+{{ 'Server' }} => It´s possible to use ternary operator or whatever expression.
+
+## Property binding vs String Interpolation
+
+!Never mix both! they are known for using them separated.
 
 # Directives
 
