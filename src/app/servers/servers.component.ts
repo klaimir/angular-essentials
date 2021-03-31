@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  // selector: '[app-servers]',
   selector: '.app-servers',
   templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css']
@@ -22,12 +21,11 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateServer() {
-    this.serverCreationStatus = 'Server was created';
-  }
-
-  onUpdateServerName(event: Event) {
-    // Casting syntax
-    this.serverName = (<HTMLInputElement>event.target).value;
+    if(this.serverName) {
+      this.serverCreationStatus = `Server was created. It´s name is ${this.serverName}`;
+    } else {
+      alert('Server name is required');
+    }
   }
 
 }

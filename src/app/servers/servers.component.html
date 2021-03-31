@@ -4,8 +4,7 @@
     type="text"
     name="serverName"
     class="form-control"
-    [value]="serverName"
-    (input)="onUpdateServerName($event)"
+    [(ngModel)]="serverName"
   />
 </div>
 <p>{{ serverName }}</p>
