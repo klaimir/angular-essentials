@@ -1,0 +1,20 @@
+<div class="form-group">
+  <label for="username">Username</label>
+  <input
+    type="text"
+    class="form-control"
+    placeholder="username"
+    [value]="username"
+    (input)="onUsernameInput($event)"
+  />
+</div>
+Username:
+<p>{{ username }}</p>
+<button
+  type="button"
+  class="btn btn-primary"
+  [disabled]="!allowReset"
+  (click)="onResetClick()"
+>
+  Reset
+</button>
