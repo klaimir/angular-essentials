@@ -4,7 +4,8 @@
     type="text"
     class="form-control"
     placeholder="username"
-    [(ngModel)]="username"
+    [value]="username"
+    (input)="onUsernameInput($event)"
   />
 </div>
 Username:
@@ -12,7 +13,7 @@ Username:
 <button
   type="button"
   class="btn btn-primary"
-  [disabled]="!allowReset()"
+  [disabled]="!allowReset"
   (click)="onResetClick()"
 >
   Reset
