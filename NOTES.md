@@ -4,13 +4,13 @@ We are going to writting all relevant additional notes for the project.
 
 # Getting Started
 
-## Instalar bootstrap
+## Installing bootstrap
 
 1) npm install --save bootstrap@3 (With this we indicate the version one, even though we´re going to install the 4 version according to snippets plugin installed in VSC)
 2) In angular.json file add the css style path 'node_modules/bootstrap/dist/css/bootstrap.min.css'
 3) In sources in dev web tool we can see the style code loaded but sometimes it´s necessary to recompiling the project to apply the changes.
 
-## Otras consideraciones
+## Others considerations
 
 One important note: All the course code will only work if you are NOT using "strict mode" see the "First App" lecture in this module. Strict mode forces you to write more verbose code in some places (especially when it comes to class properties). If you enabled it by accident, you can also disable it by setting strict: false in your tsconfig.json file.
 
@@ -31,6 +31,14 @@ One important note: All the course code will only work if you are NOT using "str
 ## Property binding vs String Interpolation
 
 !Never mix both! they are known for using them separated.
+
+## Bindable Properties and Events
+
+How do you know to which Properties or Events of HTML Elements you may bind? You can basically bind to all Properties and Events - a good idea is to console.log()  the element you're interested in to see which properties and events it offers.
+
+Important: For events, you don't bind to onclick but only to click (=> (click)).
+
+The MDN (Mozilla Developer Network) offers nice lists of all properties and events of the element you're interested in. Googling for YOUR_ELEMENT properties  or YOUR_ELEMENT events  should yield nice results.
 
 # Directives
 
