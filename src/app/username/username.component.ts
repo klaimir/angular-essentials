@@ -8,20 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class UsernameComponent implements OnInit {
 
   username: string = '';
-  allowReset: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onUsernameInput(event: Event) {
-    this.allowReset = (<HTMLInputElement>event.target).value ? true : false;
+  allowReset(): boolean {
+    return this.username !== '';
   }
 
   onResetClick() {
     this.username = '';
-    this.allowReset = false;
   }
 
 }
