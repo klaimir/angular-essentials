@@ -6,9 +6,9 @@ We are going to writting all relevant additional notes for the project.
 
 ## Installing bootstrap
 
-1) npm install --save bootstrap@3 (With this we indicate the version one, even though we´re going to install the 4 version according to snippets plugin installed in VSC)
-2) In angular.json file add the css style path 'node_modules/bootstrap/dist/css/bootstrap.min.css'
-3) In sources in dev web tool we can see the style code loaded but sometimes it´s necessary to recompiling the project to apply the changes.
+1. npm install --save bootstrap@3 (With this we indicate the version one, even though we´re going to install the 4 version according to snippets plugin installed in VSC)
+2. In angular.json file add the css style path 'node_modules/bootstrap/dist/css/bootstrap.min.css'
+3. In sources in dev web tool we can see the style code loaded but sometimes it´s necessary to recompiling the project to apply the changes.
 
 ## Others considerations
 
@@ -34,17 +34,17 @@ One important note: All the course code will only work if you are NOT using "str
 
 ## Bindable Properties and Events
 
-How do you know to which Properties or Events of HTML Elements you may bind? You can basically bind to all Properties and Events - a good idea is to console.log()  the element you're interested in to see which properties and events it offers.
+How do you know to which Properties or Events of HTML Elements you may bind? You can basically bind to all Properties and Events - a good idea is to console.log() the element you're interested in to see which properties and events it offers.
 
 Important: For events, you don't bind to onclick but only to click (=> (click)).
 
-The MDN (Mozilla Developer Network) offers nice lists of all properties and events of the element you're interested in. Googling for YOUR_ELEMENT properties  or YOUR_ELEMENT events  should yield nice results.
+The MDN (Mozilla Developer Network) offers nice lists of all properties and events of the element you're interested in. Googling for YOUR_ELEMENT properties or YOUR_ELEMENT events should yield nice results.
 
 ## Two-Way-Binding!
 
-Important: For Two-Way-Binding (covered in the next lecture) to work, you need to enable the ngModel  directive. This is done by adding the FormsModule  to the imports[]  array in the AppModule.
+Important: For Two-Way-Binding (covered in the next lecture) to work, you need to enable the ngModel directive. This is done by adding the FormsModule to the imports[] array in the AppModule.
 
-You then also need to add the import from @angular/forms  in the app.module.ts file:
+You then also need to add the import from @angular/forms in the app.module.ts file:
 
 import { FormsModule } from '@angular/forms';
 
@@ -78,6 +78,18 @@ You can use the attribute notation or CamelCase notation to specify the attribut
 # Applying CSS Classes Dynamically with ngClass
 
 [ngClass]="{cssClass: expression}". cssClass, is the CSS class to apply and expresion is a boolean form required to the css Class is applied.
+
+# Outputting List with ngFor
+
+# Task 3: Practicing Directives
+
+<ol>
+  <li>Add A button which says 'Display Details'</li>
+  <li>Add a paragraph with any content of your choice (e.g. 'Secret Password = tuna')</li>
+  <li>Toggle the displaying of that paragraph with the button created in the first step</li>
+  <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number)</li>
+  <li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) and white color (ngClass)</li>
+</ol>
 
 # Services and Dependency Injection
 
