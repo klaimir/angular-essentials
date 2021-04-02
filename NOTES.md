@@ -57,7 +57,13 @@ import { FormsModule } from '@angular/forms';
   <li>Upon clicking the button, the username should be reset to an empty string</li>
 </ol>
 
+When first approach, value of username input text is not updated where reset input button is clicked.
+
 # Directives
+
+Directive are introductions in the DOM. We can use, built in or custom.
+
+## NgIf
 
 # Services and Dependency Injection
 
