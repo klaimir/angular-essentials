@@ -1,11 +1,11 @@
 <button type="button" class="btn btn-primary" (click)="onClickDetail()">
   Display details
 </button>
-<p *ngIf="showParagraph">Secret Password = tuna</p>
+<p *ngIf="showSecret">Secret Password = tuna</p>
 <p
-  *ngFor="let click of clicks"
-  [ngStyle]="{ backgroundColor: getColor(click) }"
-  [ngClass]="{ 'white-color': isWhiteColor(click) }"
+  *ngFor="let logItem of logs"
+  [ngStyle]="{ backgroundColor: logItem >= 5 ? 'black' : 'white' }"
+  [ngClass]="{ 'white-color': logItem >= 5 }"
 >
-  {{ click }}
+  {{ logItem }}
 </p>
