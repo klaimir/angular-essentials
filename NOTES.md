@@ -75,6 +75,8 @@ It´s super important to understand that property binding in Directives is not t
 that a directive will be used in that element not the attribute itself to bind.
 You can use the attribute notation or CamelCase notation to specify the attribute inside the directive.
 
+[ngStyle]="{atribute: value}"
+
 # Applying CSS Classes Dynamically with ngClass
 
 [ngClass]="{cssClass: expression}". cssClass, is the CSS class to apply and expresion is a boolean form required to the css Class is applied.
