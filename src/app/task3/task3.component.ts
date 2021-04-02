@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Task3Component implements OnInit {
 
   showSecret: boolean = false;
-  logs: number [] = [];
+  logs: any [] = [];
 
   constructor() { }
 
@@ -17,7 +17,7 @@ export class Task3Component implements OnInit {
 
   onClickDetail() {
     this.showSecret = !this.showSecret;
-    this.logs.push(this.logs.length+1);
+    this.logs.push(new Date());
   }
 
 }

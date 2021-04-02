@@ -77,13 +77,13 @@ You can use the attribute notation or CamelCase notation to specify the attribut
 
 [ngStyle]="{atribute: value}"
 
-# Applying CSS Classes Dynamically with ngClass
+## Applying CSS Classes Dynamically with ngClass
 
 [ngClass]="{cssClass: expression}". cssClass, is the CSS class to apply and expresion is a boolean form required to the css Class is applied.
 
-# Outputting List with ngFor
+## Outputting List with ngFor
 
-# Task 3: Practicing Directives
+## Task 3: Practicing Directives
 
 <ol>
   <li>Add A button which says 'Display Details'</li>
@@ -92,6 +92,8 @@ You can use the attribute notation or CamelCase notation to specify the attribut
   <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number)</li>
   <li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) and white color (ngClass)</li>
 </ol>
+
+## Getting the Index when using ngFor
 
 # Services and Dependency Injection
 
