@@ -63,7 +63,8 @@ When first approach, value of username input text is not updated where reset inp
 
 Directive are introductions in the DOM. We can use, built in or custom.
 
-## NgIf
+## ngIf
+## ngIf with else
 
 # Services and Dependency Injection
 
