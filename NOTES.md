@@ -61,14 +61,23 @@ When first approach, value of username input text is not updated where reset inp
 
 # Directives
 
+## Introduction
+
 Directive are introductions in the DOM. We can use, built in or custom.
 
 ## ngIf
+
 ## ngIf with else
+
 ## Styling Elements Dynamically with ngStyle
+
 It´s super important to understand that property binding in Directives is not the same to regular property binding. It´s only indicate
 that a directive will be used in that element not the attribute itself to bind.
 You can use the attribute notation or CamelCase notation to specify the attribute inside the directive.
+
+# Applying CSS Classes Dynamically with ngClass
+
+[ngClass]="{cssClass: expression}". cssClass, is the CSS class to apply and expresion is a boolean form required to the css Class is applied.
 
 # Services and Dependency Injection
 
