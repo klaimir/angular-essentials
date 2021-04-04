@@ -2,7 +2,7 @@
 
 We are going to writting all relevant additional notes for the project.
 
-# Getting Started
+# Section 1: Getting Started
 
 ## Installing bootstrap
 
@@ -14,25 +14,25 @@ We are going to writting all relevant additional notes for the project.
 
 One important note: All the course code will only work if you are NOT using "strict mode" see the "First App" lecture in this module. Strict mode forces you to write more verbose code in some places (especially when it comes to class properties). If you enabled it by accident, you can also disable it by setting strict: false in your tsconfig.json file.
 
-# The Basics
+# Section 2: The Basics
 
 - Explanation of the different parts of a component.
 - ng g c server (To create a component).
 
-# Components and Databinding
+## Components and Databinding
 
 - Explain component structure.
 - Explain component communications in binding.
 
-## String Interpolation
+### String Interpolation
 
 {{ 'Server' }} => It´s possible to use ternary operator or whatever expression.
 
-## Property binding vs String Interpolation
+### Property binding vs String Interpolation
 
 !Never mix both! they are known for using them separated.
 
-## Bindable Properties and Events
+### Bindable Properties and Events
 
 How do you know to which Properties or Events of HTML Elements you may bind? You can basically bind to all Properties and Events - a good idea is to console.log() the element you're interested in to see which properties and events it offers.
 
@@ -40,7 +40,7 @@ Important: For events, you don't bind to onclick but only to click (=> (click)).
 
 The MDN (Mozilla Developer Network) offers nice lists of all properties and events of the element you're interested in. Googling for YOUR_ELEMENT properties or YOUR_ELEMENT events should yield nice results.
 
-## Two-Way-Binding!
+### Two-Way-Binding!
 
 Important: For Two-Way-Binding (covered in the next lecture) to work, you need to enable the ngModel directive. This is done by adding the FormsModule to the imports[] array in the AppModule.
 
@@ -48,7 +48,7 @@ You then also need to add the import from @angular/forms in the app.module.ts fi
 
 import { FormsModule } from '@angular/forms';
 
-## Ejercicio 2
+### Ejercicio 2
 
 <ol>
   <li>Add a Input field which updates a property ('username') via Two-Way-Binding</li>
@@ -59,17 +59,17 @@ import { FormsModule } from '@angular/forms';
 
 When first approach, value of username input text is not updated where reset input button is clicked.
 
-# Directives
+## Directives
 
-## Introduction
+### Introduction
 
 Directive are introductions in the DOM. We can use, built in or custom.
 
-## ngIf
+### ngIf
 
-## ngIf with else
+### ngIf with else
 
-## Styling Elements Dynamically with ngStyle
+### Styling Elements Dynamically with ngStyle
 
 It´s super important to understand that property binding in Directives is not the same to regular property binding. It´s only indicate
 that a directive will be used in that element not the attribute itself to bind.
@@ -77,13 +77,13 @@ You can use the attribute notation or CamelCase notation to specify the attribut
 
 [ngStyle]="{atribute: value}"
 
-## Applying CSS Classes Dynamically with ngClass
+### Applying CSS Classes Dynamically with ngClass
 
 [ngClass]="{cssClass: expression}". cssClass, is the CSS class to apply and expresion is a boolean form required to the css Class is applied.
 
-## Outputting List with ngFor
+### Outputting List with ngFor
 
-## Task 3: Practicing Directives
+### Task 3: Practicing Directives
 
 <ol>
   <li>Add A button which says 'Display Details'</li>
@@ -93,26 +93,53 @@ You can use the attribute notation or CamelCase notation to specify the attribut
   <li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) and white color (ngClass)</li>
 </ol>
 
-## Getting the Index when using ngFor
+### Getting the Index when using ngFor
 
-# Services and Dependency Injection
 
-# Routing
+# Section 3: Course Project - The Basics
 
-# Observables
+## Project Introduction
 
-# Form
+## Planning the App
 
-# Pipes
+## Installing Bootstrap Correctly
 
-# Http
+In the next lecture, we set up the course project. For that, we'll install the Bootstrap CSS Framework.
 
-# Authentication
+In this course, we use version 3 of the framework, install it via npm install --save bootstrap@3  => The @3  is important!
 
-# Optimization and NgModules
+Additionally, when using a project created with Angular CLI 6+ (check via ng v ), you'll have an angular.json  file instead of an .angular-cli.json file. In that file, you still need to add Bootstrap to the styles[]  array as shown in the next video, but the path should be node_modules/bootstrap/dist/css/bootstrap.min.css , NOT ../node_modules/bootstrap/dist/css/bootstrap.min.css . The leading ../  must not be included.
 
-# Deployment
+Also see this lecture - I do show the complete setup process there: https://www.udemy.com/the-complete-guide-to-angular-2/learn/v4/t/lecture/6655614/
 
-# Animations and Testing
+If you're facing any problems, please have a look at this very thorough thread by Jost: https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/17862130#questions/10444944
 
-# Bonus Track
+
+
+# SUMMARY
+
+## Components and Databinding
+
+## Directives
+
+## Services and Dependency Injection
+
+## Routing
+
+## Observables
+
+## Form
+
+## Pipes
+
+## Http
+
+## Authentication
+
+## Optimization and NgModules
+
+## Deployment
+
+## Animations and Testing
+
+## Bonus Track
