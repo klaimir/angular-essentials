@@ -140,3 +140,5 @@ You can use the attribute notation or CamelCase notation to specify the attribut
 
 ## Property & Event Binding Overview
 
+## Binding to Custom Properties
+
