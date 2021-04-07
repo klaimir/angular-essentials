@@ -144,3 +144,5 @@ You can use the attribute notation or CamelCase notation to specify the attribut
 
 ## Assigning an Alias to Custom Properties
 
+## Binding to Custom Events
+
