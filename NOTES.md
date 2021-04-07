@@ -146,3 +146,5 @@ You can use the attribute notation or CamelCase notation to specify the attribut
 
 ## Binding to Custom Events
 
+## Assigning an Alias to Custom Events
+
