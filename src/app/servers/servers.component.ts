@@ -11,7 +11,8 @@ export class ServersComponent implements OnInit {
   serverCreationStatus: string = 'Server is not created yet!';
   serverName: string = 'Testserver';
   serverCreated: boolean = false;
-  servers: string [] = ['Testserver', 'Testserver 2'];
+  // For debugging: Example 1
+  servers;
 
   constructor() {
     setTimeout(() => {
@@ -26,6 +27,12 @@ export class ServersComponent implements OnInit {
       this.serverCreated = true;
       this.servers.push(this.serverName);
       this.serverCreationStatus = `Server was created. It´s name is ${this.serverName}`;
+  }
+
+  // For debugging: Example 2
+  onDeleteServer(i: number) {
+    const position: number = i+1;
+    this.servers.splice(position, 1);
   }
 
 }
