@@ -132,3 +132,11 @@ You can use the attribute notation or CamelCase notation to specify the attribut
 - Show errors by console.
 - Debugging code by source map establishing breakpoint to debugging in runtime.
 - Angular augury
+
+
+# Section 5: Components & Databinding Deep Dive
+
+## Splitting Apps into Components
+
+## Property & Event Binding Overview
+

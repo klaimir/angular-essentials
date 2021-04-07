@@ -1,18 +1,11 @@
 <div class="container">
+  <app-cockpit></app-cockpit>
+  <hr>
   <div class="row">
-    <div class="col-12">
-      <h3>My first component</h3>
-      <div class="app-servers"></div>
+    <div class="col-xs-12">
+      <app-server-element
+        *ngFor="let element of serverElements">
+      </app-server-element>
     </div>
   </div>
 </div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      
-    </div>
-  </div>
-</div>
-
-<router-outlet></router-outlet>
