@@ -187,3 +187,8 @@ If you're using Angular 9+, you only need to add { static: true } (if needed) bu
 This is similar to $ref in VueJs. You can create a ViewChild of a localReference to access to element DOM directly in TS code.
 
 Dont try to set value through nativeElement. If you need access to the value or manipulate it, it´s a better option using binding or interpolation.
+
+## Projecting Content into Components with ng-content
+
+This is similar to slot in VueJs. You can project HTML code inside another component, or in other words, you can distribute content by
+composition from outside the component itself.
