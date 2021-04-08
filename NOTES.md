@@ -181,3 +181,9 @@ The same change (add { static: true } as a second argument) needs to be applied 
 If you DON'T access the selected element in ngOnInit (but anywhere else in your component), set static: false instead!
 
 If you're using Angular 9+, you only need to add { static: true } (if needed) but not { static: false }.
+
+## Getting Access to the Template & DOM with @ViewChild
+
+This is similar to $ref in VueJs. You can create a ViewChild of a localReference to access to element DOM directly in TS code.
+
+Dont try to set value through nativeElement. If you need access to the value or manipulate it, it´s a better option using binding or interpolation.
