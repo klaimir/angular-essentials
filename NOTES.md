@@ -148,3 +148,11 @@ You can use the attribute notation or CamelCase notation to specify the attribut
 
 ## Assigning an Alias to Custom Events
 
+## Custom Property and Event Binding Summary
+
+Input/Output approach is perfect valid if there no much distance beetween components. Else, Services are one option more practical.
+
+## Understanding View Encapsulation
+
+Explanation about scope of css style file in the project and shadow DOM.
+
