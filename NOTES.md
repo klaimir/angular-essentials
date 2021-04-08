@@ -198,3 +198,10 @@ composition from outside the component itself.
 View the Component Lifecycle pdf.
 
 ## Seeing Lifecycle Hooks in Action
+
+## Lifecycle Hooks and Template Access
+
+## @ContentChild() in Angular 8+
+For ContentChild, the same adjustments as for ViewChild apply: https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/14865241
+
+## Getting Access to ng-content with @ContentChild
