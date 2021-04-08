@@ -196,3 +196,5 @@ composition from outside the component itself.
 ## Understanding the Component Lifecycle
 
 View the Component Lifecycle pdf.
+
+## Seeing Lifecycle Hooks in Action
