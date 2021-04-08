@@ -192,3 +192,7 @@ Dont try to set value through nativeElement. If you need access to the value or 
 
 This is similar to slot in VueJs. You can project HTML code inside another component, or in other words, you can distribute content by
 composition from outside the component itself.
+
+## Understanding the Component Lifecycle
+
+View the Component Lifecycle pdf.
