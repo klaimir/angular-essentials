@@ -156,3 +156,7 @@ Input/Output approach is perfect valid if there no much distance beetween compon
 
 Explanation about scope of css style file in the project and shadow DOM.
 
+## More on View Encapsulation
+
+encapsulation: ViewEncapsulation.None
+
