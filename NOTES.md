@@ -160,3 +160,7 @@ Explanation about scope of css style file in the project and shadow DOM.
 
 encapsulation: ViewEncapsulation.None
 
+## Using Local References in Templates
+
+They can be only used inside a template not in TS code.
+
