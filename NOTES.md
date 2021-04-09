@@ -205,3 +205,7 @@ View the Component Lifecycle pdf.
 For ContentChild, the same adjustments as for ViewChild apply: https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/14865241
 
 ## Getting Access to ng-content with @ContentChild
+
+## Wrap up
+
+## Task: Practicing Property & Event Binding and View Encapsulation
