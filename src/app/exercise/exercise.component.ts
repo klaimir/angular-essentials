@@ -3,25 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-exercise',
   templateUrl: './exercise.component.html',
-  styleUrls: ['./exercise.component.css']
+  styleUrls: ['./exercise.component.css'],
 })
 export class ExerciseComponent implements OnInit {
+  numbers: number[] = [];
 
-  oddList: number [] = [];
-  evenList: number [] = [];
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onGameStarted(counter: number) {
     console.log('onGameStarted', counter);
-    if(counter%2 !== 0) {
-      this.oddList.push(counter);
-    } else {
-      this.evenList.push(counter);
-    }
+    this.numbers.push(counter);
   }
-
 }
